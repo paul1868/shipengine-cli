@@ -2,12 +2,12 @@
 
 const { expect, test } = require("@oclif/test");
 
-describe("integration", () => {
+describe("apps", () => {
   test
     .stdout()
-    .command(["integration"])
+    .command(["apps"])
     .exit(0)
-    .it("runs integration info message", ctx => {
-      expect(ctx.stdout).to.contain("integration:new");
+    .it("runs apps info message", ctx => {
+      expect(ctx.stdout).to.contain("apps:new");
     });
 });
